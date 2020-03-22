@@ -1,0 +1,33 @@
+.property {
+    border-radius: 25px;
+    background:lightgrey;
+    padding: 1px;
+    width: 200px;
+    height: 180px;
+    margin: 10px 20px;
+}
+
+.property .header {
+    padding: 4px 0;
+}
+
+.property .body {
+    border-radius: 25px;
+    height: 140px;
+    padding: 0;
+    background: grey;
+    color: white;
+}
+
+.property .body img {
+    width: 200px;
+    height: 110px;
+}
+
+.btn {
+    display: none;
+}
+
+img:hover + .btn, .btn:hover {
+    display: inline-block;
+}
