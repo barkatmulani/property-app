@@ -5,7 +5,6 @@
 Every component is created inside its own folder. The component folder may contain the corresponding stylesheet and test files.
 
 # Component Hierarchy
-
 -App
    |_Results -> Properties
    |_ Saved Properties -> Properties
@@ -15,7 +14,7 @@ Every component is created inside its own folder. The component folder may conta
 
 # Folder Heirarchy:
 
--components
+- components
  |_ results
  |_ savedProperties
  |_ shared
