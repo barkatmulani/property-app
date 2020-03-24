@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Results from './results/results';
 import SavedProperties from './savedProperties/savedProperties';
-import data from '../data';
+import data from '../data/data';
 import { connect } from 'react-redux';
 import { setSavedProperties } from '../redux/savedProperties/savedProperties.actions'
 import { setResults } from '../redux/results/results.actions'
+import './main.css';
 
 class Main extends Component {
     componentDidMount() {
@@ -14,7 +15,7 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="main row">
                 <div className="col-6">
                     <Results data-test='results' />
                 </div>

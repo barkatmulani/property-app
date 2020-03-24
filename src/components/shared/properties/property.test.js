@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Properties from './properties';
-import { properties } from '../../../testData';
+import { properties } from '../../../data/testData';
 
 describe('Properties Component', () => {
     it('Should render x number of components against x items in list', () => {
