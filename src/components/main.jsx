@@ -14,12 +14,12 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="App row">
+            <div className="row">
                 <div className="col-6">
-                    <Results />
+                    <Results data-test='results' />
                 </div>
                 <div className="col-6">
-                    <SavedProperties />
+                    <SavedProperties data-test='savedProperties'/>
                 </div>
             </div>
         );

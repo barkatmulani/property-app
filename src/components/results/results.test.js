@@ -1,13 +1,24 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Properties from './results';
+import Main from '../main';
+import { properties } from '../../testData';
+import { testStore } from '../../Utils';
+import { Provider } from 'react-redux';
 
-describe('Properties', () => {
-    it('Should have 3 properties', () => {
-        // const comp = shallow(<Properties />);
-        // console.log(comp);
-        // const wrapper = comp.find('.btn-success');
-        // expect(wrapper.length).toBe(3);
-        expect(true).toBe(true);
-    })
-})
+describe('Results Component', () => {
+
+  it('Should render with 2 divs, i.e. Results & Saved Properties', () => {
+    const initialState = {
+          results: [properties],
+          savedProperties: []
+    };
+    
+    const store = testStore(initialState);
+    const wrapper = shallow(<Main store={store} />).dive();
+        
+    const results = wrapper.find("[data-test='results']");
+    const savedProperties = wrapper.find("[data-test='savedProperties']");
+    expect(results.length).toBe(1);
+    expect(savedProperties.length).toBe(1);
+  });
+});
