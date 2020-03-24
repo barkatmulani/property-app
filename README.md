@@ -1,4 +1,4 @@
-# Technical Documentation
+# Documentation
 
 ## Application Architecture
 
