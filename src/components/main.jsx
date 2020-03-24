@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Results from './results/results';
 import SavedProperties from './savedProperties/savedProperties';
-import data from '../result';
+import data from '../data';
 import { connect } from 'react-redux';
 import { setSavedProperties } from '../redux/savedProperties/savedProperties.actions'
 import { setResults } from '../redux/results/results.actions'
