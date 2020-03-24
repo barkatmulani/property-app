@@ -1,5 +1,16 @@
 # Documentation
 
+## Installation instruction
+
+This application is developed using React & Redux. Following are the installation instructions:
+
+1. Download and install npm latest version from https://nodejs.org website.
+2. Download and extract the zip file of this application from the GitHub link https://github.com/barkatmulani/property-app.
+3. Go to the command prompt by running **cmd.exe**, and change the directory to the unzipped folder path.
+4. Enter on command prompt **npm install** to install all the npm packages for this application.
+5. Enter on command prompt **npm start** to run the application, which will open up in the default browser on port 3000 of localhost.
+6. Enter on command prompt **npm test** to run all the tests.
+
 ## Application Architecture
 
 Every component is created inside its own folder. A component folder may contain the corresponding stylesheet and test files.
