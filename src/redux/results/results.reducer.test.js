@@ -4,7 +4,7 @@ import results from './results.reducer';
 describe('Results Reducer', () => {
     it('Should return default state', () => {
         const newState = results(undefined, {});
-        expect(newState).toEqual({list: []});
+        expect(newState).toEqual([]);
     });
 
     it('Should return new state if receiving type', () => {
@@ -13,6 +13,6 @@ describe('Results Reducer', () => {
             type: types.SET_RESULTS,
             payload: list
         });
-        expect(newState).toEqual({list});
+        expect(newState).toEqual(list);
     });
 });

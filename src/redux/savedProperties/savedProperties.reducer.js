@@ -1,22 +1,20 @@
 import ACTION from './savedProperties.const'
 
-const INITIAL_STATE = {
-    list: []
-}
+const INITIAL_STATE = [];
 
 const savedPropertiesReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case ACTION.SET_SAVED_PROPERTIES:
-            return { list: action.payload };
+            return [ ...action.payload ];
         case ACTION.ADD_SAVED_PROPERTY:
-            if(state.list.includes(action.payload))
+            if(state.includes(action.payload))
                 return state;
-            return { list: [...state.list, action.payload] };
+            return [...state, action.payload];
         case ACTION.REMOVE_SAVED_PROPERTY:
-            let index = state.list.indexOf(action.payload);
+            let index = state.length ? state.indexOf(action.payload) : -1;
             if(index === -1) return state;
-            let list = state.list.filter((x,i) => i !== index);
-            return { list }
+            let list = state.filter((x,i) => i !== index);
+            return list
         default:
             return state;
     }

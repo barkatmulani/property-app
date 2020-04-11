@@ -10,10 +10,11 @@ const Results = (props) => {
 
     return (
         <Properties heading="Results"
-                    list={props.results.list}
+                    list={props.results}
                     buttonClicked={buttonClicked}
                     actionText="Add Property"
                     class="btn-success"
+                    data-test="results"
         />
     );
 }

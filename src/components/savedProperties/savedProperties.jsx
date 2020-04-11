@@ -10,10 +10,11 @@ const SavedProperties = (props) => {
 
     return (
         <Properties heading="Saved Properties"
-                    list={props.savedProperties.list}
+                    list={props.savedProperties}
                     buttonClicked={buttonClicked}
                     actionText="Remove Property"
                     class="btn-danger"
+                    data-test="savedProperties"
         />
     );
 }
